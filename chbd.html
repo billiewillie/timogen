@@ -7,6 +7,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 	<link rel="icon" type="image/png" href="img/favicon.png">
 	<title>Timogen</title>
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/animsition.min.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -115,7 +117,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-6 col-lg-7">
+						<div class="col-6 col-lg-7 subtitle">
 							<p class="sick__subtitle">Клинические испытания показали, что применение <b>Тимоген®&nbsp;Спрей</b> по рекомендованной схеме и в дозировке, соответствующей возрасту ребёнка:</p>
 						</div>
 						<div class="col-12 sick__list">
@@ -204,6 +206,7 @@
 						<div class="col-9 offset-3 col-lg-4 offset-lg-8">
 							<div class="message__outter message--first">
 								<div class="message">
+									<div class="message__rain wow fadeInUp"></div>
 									<p class="message__text">Узнайте больше о проблеме часто болеющих детей</p>
 									<a href='' class="message__link">Подробнее</a>
 									<div class="message__i--outter">
@@ -227,7 +230,7 @@
 								<div class="col-7 col-lg-12 sick__how--title">
 									<p class="title__text">Способ применения</p>
 									<p class="sick__subtitle">Профилактические курсы приёма 2 раза в год</p>
-									<div class="sick__how--product">
+									<div class="sick__how--product wow slideInLeft" data-wow-duration='1s'>
 										<img src="img/product.png" alt="">
 									</div>
 								</div>
@@ -261,7 +264,7 @@
 							</div>
 						</div>
 						<div class="col-9 col-lg-4 offset-lg-1">
-							<div class="message__outter message--bottom">
+							<div class="message__outter message--bottom wow fadeInUp">
 								<div class="message">
 									<p class="message__text">Удобный флакон для носов и носиков</p>
 									<a href='' class="message__link">Подробнее</a>
@@ -293,6 +296,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-12">
+						<p class="warning__fixed">Имеются противопоказания, необходима консультация специалиста</p>
 						<p class="footer__warning">Имеются противопоказания, необходима консультация специалиста</p>
 					</div>
 				</div>
@@ -318,6 +322,8 @@
 
 	<!-- js -->
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/animsition.js"></script>
 	<script type="text/javascript" src='js/main.js'></script>
 </body>
 </html>

@@ -92,6 +92,7 @@ body {
 
 
 
+
 /*page__promo*/
 
 .wrapper {
@@ -116,7 +117,7 @@ body {
 .main {
     padding: 20px 0 60px;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     display: inline-block;
 }
 
@@ -260,7 +261,7 @@ body {
     width: 100%;
     height: 100%;
     max-height: 200px;
-    z-index: 0;
+    z-index: 2;
 }
 
 .bush1 {
@@ -338,6 +339,7 @@ body {
 .hide {
     display: none;
 }
+
 
 
 
@@ -939,7 +941,7 @@ body {
     display: inline-block;
     font-weight: 700;
     color: #fff;
-    font-size: 17px;
+    font-size: 4.1vw;
     line-height: 1.2;
 }
 
@@ -951,7 +953,7 @@ body {
     padding: 35px 0 35px 50px;
     border-bottom: 1px solid #dcdcdc;
     color: #b1b1b1;
-    font-size: 13px;
+    font-size: 3.5vw;
     position: relative;
     line-height: 1.3;
     font-weight: 500;
@@ -1022,10 +1024,10 @@ body {
     font-weight: 700;
     text-align: center;
     line-height: 1.3;
-    font-size: 12px;
+    font-size: 3.7vw;
     position: relative;
     display: block;
-    min-height: 181px;
+    min-height: 195px;
     -webkit-box-shadow: 0px 3px 10px 0px rgba(158, 158, 158, 1);
     -moz-box-shadow: 0px 3px 10px 0px rgba(158, 158, 158, 1);
     box-shadow: 0px 3px 10px 0px rgba(158, 158, 158, 1);
@@ -1058,6 +1060,7 @@ body {
 footer.footer {
     position: relative;
     max-height: inherit;
+    z-index: 3;
 }
 
 .footer__warning {
@@ -1066,6 +1069,26 @@ footer.footer {
     text-align: center;
     font-weight: 200;
     font-size: 11px;
+}
+
+.warning__fixed {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #a3a3a3;
+    font-size: 3vw;
+    padding: 5px;
+    font-weight: 200;
+}
+
+.warning__fixed.hidden {
+    display: none;
 }
 
 .footer__main {
@@ -1130,27 +1153,9 @@ footer.footer {
     background-position: 50% 100%;
     background-repeat: no-repeat;
 }
-
-
-
-/*.sick__how::after {
-    position: absolute;
-    content: '';
-    display: block;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    background-image: url(../img/wave6.png);
-    -webkit-background-size: contain;
-    background-size: contain;
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
-}*/
-
+.sick__for.sick__bg-3{
+  padding: 6vh 0;
+}
 .sick__title {
     position: relative;
 }
@@ -1235,15 +1240,21 @@ footer.footer {
     right: 0;
     position: absolute;
     z-index: 1;
+    text-align: right;
 }
-
+.subtitle{
+  margin-bottom: 5vh;
+}
 .sick__subtitle {
     font-size: 3.7vw;
     font-weight: 500;
     line-height: 1.3;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
 }
-
+.sick__list{
+  position: relative;
+  z-index: 3;
+}
 .sick__item {
     margin-bottom: 5vh;
     font-size: 3.5vw;
@@ -1254,7 +1265,9 @@ footer.footer {
 .sick__item:nth-child(1) {
     margin-right: 50%;
 }
-
+.sick__bg-3 .sick__item:nth-child(1) {
+    margin-right: 0%;
+}
 .sick__icon {
     width: 50%;
     margin-bottom: 2vh;
@@ -1304,8 +1317,11 @@ footer.footer {
     background-size: contain;
     background-position: 50% 100%;
     background-repeat: no-repeat;
+    z-index: 2;
 }
-
+.sick__how.sick__bg-4{
+  padding-top: 6vh;
+}
 .message__outter {
     border-radius: 15px;
     padding: 0;
@@ -1472,123 +1488,144 @@ footer.footer {
     background-image: url(../img/market-white-2.png);
 }
 
-.sick__how--title{
-  position: relative;
-  margin-bottom: 15vh;
+.sick__how--title {
+    position: relative;
+    margin-bottom: 15vh;
 }
-.sick__how--product{
-  position: absolute;
-  left: 80%;
-  bottom: -10vh;
-  width: 50vw;
-  z-index: 0;
+
+.sick__how--product {
+    position: absolute;
+    left: 80%;
+    bottom: -10vh;
+    width: 50vw;
+    z-index: 0;
 }
-.sick__how--product::before{
-  position: absolute;
-  content: '';
-  display: block;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 100%;
-  background-image: url(../img/snot.png);
-  -webkit-background-size: contain;
-  background-size: contain;
-  background-position: 0% 0%;
-  background-repeat: no-repeat;
-  z-index: -1;
+
+.sick__how--product::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-image: url(../img/snot.png);
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
-.sick__how--product img{
-  max-height: 200%;
+
+.sick__how--product img {
+    max-height: 200%;
 }
-.sick__how .title__text{
-  font-size: 7vw;
-  margin-bottom: 3vh;
+
+.sick__how .title__text {
+    font-size: 7vw;
+    margin-bottom: 3vh;
 }
-.sick__how .sick__subtitle{
-  font-weight: 600;
+
+.sick__how .sick__subtitle {
+    font-weight: 600;
 }
-.seasons{
-  font-size: 0;
-  margin-bottom: 20%;
+
+.seasons {
+    font-size: 0;
+    margin-bottom: 20%;
 }
-.seasons__item{
-  display: inline-block;
-  vertical-align: top;
-  width: 100%;
-  padding-left: 30vw;
-  position: relative;
+
+.seasons__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding-left: 30vw;
+    position: relative;
 }
-.seasons__item::before{
-  position: absolute;
-  content: '';
-  display: block;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 100%;
-  height: 400%;
-  background-image: url(../img/autemn.png);
-  -webkit-background-size: contain;
-  background-size: contain;
-  background-position: 0% 50%;
-  background-repeat: no-repeat;
+
+.seasons__item::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 400%;
+    background-image: url(../img/autemn.png);
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
 }
-.seasons__item:last-child::before{
-  background-image: url(../img/spring.png);
+
+.seasons__item:last-child::before {
+    background-image: url(../img/spring.png);
 }
-.seasons__item:first-child{
-  margin-bottom: 30%;
+
+.seasons__item:first-child {
+    margin-bottom: 30%;
 }
-.seasons__title{
-  font-size: 6vw;
-  font-weight: 700;
-  margin: 0;
+
+.seasons__title {
+    font-size: 6vw;
+    font-weight: 700;
+    margin: 0;
 }
-.seasons__text{
-  font-size: 5vw;
-  margin: 0;
+
+.seasons__text {
+    font-size: 5vw;
+    margin: 0;
 }
-.use__lenght{
-  line-height: 1.5;
-  margin-bottom: 14%;
+
+.use__lenght {
+    line-height: 1.5;
+    margin-bottom: 14%;
 }
-.use__lenght--item{
-  font-size: 3.5vw;
-  margin: 0;
+
+.use__lenght--item {
+    font-size: 3.5vw;
+    margin: 0;
 }
-.dose{
-  border-radius: 15px;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(43, 105, 213, 0.1);
-  -moz-box-shadow: 0px 10px 20px 0px rgba(43, 105, 213, 0.1);
-  box-shadow: 0px 10px 20px 0px rgba(43, 105, 213, 0.1);
-  padding: 10% 3vw 8%;
-  margin-bottom: 25%;
+
+.dose {
+    border-radius: 15px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(43, 105, 213, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(43, 105, 213, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(43, 105, 213, 0.1);
+    padding: 10% 3vw 8%;
+    margin-bottom: 25%;
 }
-.dose__content{
-  opacity: .5;
+
+.dose__content {
+    opacity: .5;
 }
-.dose__title{
-  font-weight: 700;
-  font-size: 9vw;
-  margin-bottom: 10%;
+
+.dose__title {
+    font-weight: 700;
+    font-size: 9vw;
+    margin-bottom: 10%;
 }
-.dose__item{
-  margin-bottom: 10%;
+
+.dose__item {
+    margin-bottom: 10%;
 }
-.dose__item:last-child{
-  margin-bottom: 0;
+
+.dose__item:last-child {
+    margin-bottom: 0;
 }
-.dose__item--title{
-  font-size: 7vw;
-  font-weight: 700;
-  margin: 0;
-  margin-bottom: 4%;
+
+.dose__item--title {
+    font-size: 7vw;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 4%;
 }
-.dose__item--text{
-  font-weight: 500;
-  margin: 0;
-  font-size: 4vw;
+
+.dose__item--text {
+    font-weight: 500;
+    margin: 0;
+    font-size: 4vw;
 }

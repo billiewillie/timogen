@@ -32,6 +32,9 @@
 
 @media (min-width: 768px) {
     .main {
+        padding: 60px 0;
+    }
+    .main__sick {
         padding: 60px 0 0;
     }
     .wrapper {
@@ -102,15 +105,11 @@
         padding: 30px;
         min-height: 350px;
     }
-    .tab__el--title {
-        font-size: 22px;
-    }
     .tab__el {
         margin-bottom: 40px;
     }
     .tab__list--item {
         padding: 50px 0 50px 70px;
-        font-size: 16px;
     }
     .tab__list--item::before {
         width: 60px;
@@ -139,8 +138,7 @@
     }
     .order__item {
         padding: 160px 30px 40px;
-        font-size: 27px;
-        min-height: 320px;
+        min-height: 365px;
     }
     .order__item::before {
         height: 100px;
@@ -186,8 +184,8 @@
     .title__text {
         font-size: 5.4vw;
     }
-    .sick__how{
-      padding-bottom: 30vh;
+    .sick__how {
+        padding-bottom: 30vh;
     }
     .message__i--outter {
         top: -19%;
@@ -195,11 +193,11 @@
     .message--bottom .message__i--outter {
         top: -21%;
     }
-    .message--first{
-      margin-bottom: 40vh;
+    .message--first {
+        margin-bottom: 40vh;
     }
-    .sick__how--product{
-      bottom: -15vh;
+    .sick__how--product {
+        bottom: -15vh;
     }
     .seasons__item:first-child {
         margin-bottom: 35%;
@@ -616,6 +614,10 @@
     .footer__warning {
         font-size: 20px;
     }
+    .warning__fixed {
+        font-size: 17px;
+        font-weight: 300;
+    }
     .footer__copyright {
         font-size: 0;
         padding-top: 4px;
@@ -864,14 +866,31 @@
         padding: 50px 0 90px;
         background-image: url(../img/wave5.png);
     }
+    .sick__for.sick__bg-3{
+      padding: 50px 0 110px;
+      background-image: url(../img/wave8.png);
+    }
+    .sick__bg{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 100%;
 
+    }
+    .sick__bg-3 .sick__bg{
+      z-index: 2;
+    }
     .sick__how {
         background-image: url(../img/wave7.png);
     }
-
+    .sick__how.sick__bg-4{
+      background-image: url(../img/wave9.png);
+    }
     .title__text {
         font-size: 30px;
-        margin-bottom: 55px;
+        margin-bottom: 30px;
     }
     .age {
         left: 110%;
@@ -885,18 +904,20 @@
         width: 33%;
         top: 0;
     }
-
+    .subtitle{
+      margin-bottom: 65px;
+    }
     .sick__subtitle {
         font-size: 18px;
-        margin-bottom: 90px;
+        margin-bottom: 30px;
     }
     .sick__item {
         margin-bottom: 65px;
         font-size: 12px;
         padding-right: 70px;
     }
-    .sick__item--text{
-      margin-bottom: 0;
+    .sick__item--text {
+        margin-bottom: 0;
     }
     .sick__item:nth-child(1) {
         margin-right: 0%;
@@ -912,47 +933,54 @@
         background-image: url(../img/wave7.png);
     }
     .message {
-      padding: 50px 25px 30px;
+        padding: 50px 25px 30px;
     }
-    .message--bottom.message__outter{
-      width: 90%;
-      margin-top: -40px;
+    .message--bottom.message__outter {
+        width: 90%;
+        margin-top: -40px;
     }
-    .message::before{
-      position: absolute;
-      content: '';
-      display: block;
-      top: -90px;
-      right: 20px;
-      width: 110px;
-      height: 110px;
-      background-image: url(../img/message_rain.png);
-      -webkit-background-size: contain;
-      background-size: contain;
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
+    .sick__bg-4 .message--bottom.message__outter{
+      margin-top: 0;
+      width: auto;
     }
-    .message--bottom .message::before{
-      display: none;
+    .message__rain {
+        position: absolute;
+        content: '';
+        display: block;
+        top: -90px;
+        right: 20px;
+        width: 110px;
+        height: 110px;
+        background-image: url(../img/message_rain.png);
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    .message--bottom .message::before {
+        display: none;
     }
     .message--first {
-      margin-top: -200px;
-      margin-bottom: 170px;
+        margin-top: -200px;
+        margin-bottom: 170px;
     }
     .message__i--outter {
-      left: 20px;
-      top: -25px;
-      width: 50px;
+        left: 20px;
+        top: -25px;
+        width: 50px;
     }
     .message__i--content {
-      font-size: 40px;
+        font-size: 40px;
     }
     .message__text {
-      font-size: 14px;
-      line-height: 1.5;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+    .sick__how .message__text{
+      margin-bottom: 18px;
     }
     .message__link {
-      font-size: 12px;
+        font-size: 12px;
     }
     .message__from {
         top: 99%;
@@ -971,90 +999,90 @@
     .message--bottom .message__author {
         right: -22%;
     }
-    .sick__button{
-      padding: 50px 0px 85px;
+    .sick__button {
+        padding: 50px 0px 85px;
     }
-    .sick__button--link{
-      padding: 20px 25px 20px 120px;
-      max-width: 480px;
-      font-size: 22px;
+    .sick__button--link {
+        padding: 20px 25px 20px 120px;
+        max-width: 480px;
+        font-size: 22px;
     }
     .message--bottom .message__i--outter {
         top: -15%;
     }
-    .sick__how--title{
-      position: relative;
-      margin-bottom: 130px;
+    .sick__how--title {
+        position: relative;
+        margin-bottom: 130px;
     }
-    .sick__how .title__text{
-      font-size: 30px;
-      margin-bottom: 10px;
+    .sick__how .title__text {
+        font-size: 30px;
+        margin-bottom: 10px;
     }
-    .sick__how .sick__subtitle{
-      font-size: 15px;
-      margin-bottom: 0;
+    .sick__how .sick__subtitle {
+        font-size: 15px;
+        margin-bottom: 0;
     }
-    .sick__how--product{
-      width: 270px;
-      left: auto;
-      right: 100%;
-      bottom: -350px;
+    .sick__how--product {
+        width: 270px;
+        left: auto;
+        right: 100%;
+        bottom: -350px;
     }
     .sick__how--product::before {
         top: 30%;
         left: -25%;
     }
-    .seasons{
-      margin-bottom: 60px;
+    .seasons {
+        margin-bottom: 60px;
     }
-    .seasons__item{
-      width: 50%;
-      padding-left: 110px;
-      padding-right: 20px;
+    .seasons__item {
+        width: 50%;
+        padding-left: 110px;
+        padding-right: 20px;
     }
-    .seasons__item::before{
-      height: 200px;
+    .seasons__item::before {
+        height: 200px;
     }
-    .seasons__item:first-child{
-      margin-bottom: 0;
+    .seasons__item:first-child {
+        margin-bottom: 0;
     }
-    .seasons__title{
-      font-size: 16px;
+    .seasons__title {
+        font-size: 16px;
     }
-    .seasons__text{
-      font-size: 12px;
+    .seasons__text {
+        font-size: 12px;
     }
-    .use__lenght{
-      margin-bottom: 40px;
-      line-height: 1.4;
+    .use__lenght {
+        margin-bottom: 40px;
+        line-height: 1.4;
     }
-    .use__lenght--item{
-      font-size: 10px;
+    .use__lenght--item {
+        font-size: 10px;
     }
-    .dose{
-      padding: 34px 30px;
-      margin-bottom: 0;
-      font-size: 0;
-      width: 85%;
+    .dose {
+        padding: 34px 30px;
+        margin-bottom: 0;
+        font-size: 0;
+        width: 85%;
     }
-    .dose__title{
-      font-size: 28px;
-      margin-bottom: 40px;
+    .dose__title {
+        font-size: 28px;
+        margin-bottom: 40px;
     }
-    .dose__item{
-      margin-bottom: 0;
-      display: inline-block;
-      width: 50%;
-      vertical-align: top;
-      padding-right: 30px;
+    .dose__item {
+        margin-bottom: 0;
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+        padding-right: 30px;
     }
-    .dose__item--title{
-      font-size: 22px;
-      margin-bottom: 20px;
+    .dose__item--title {
+        font-size: 22px;
+        margin-bottom: 20px;
     }
-    .dose__item--text{
-      font-size: 12px;
-      line-height: 1.5;
+    .dose__item--text {
+        font-size: 12px;
+        line-height: 1.5;
     }
 }
 
@@ -1121,42 +1149,47 @@
         left: 40px;
     }
     .title__text {
-        font-size: 36px;
+        font-size: 45px;
+        margin-bottom: 50px;
+    }
+    .subtitle{
+      margin-bottom: 85px;
     }
     .sick__subtitle {
-        font-size: 17px;
+        font-size: 25px;
+        margin-bottom: 50px;
     }
     .sick__icon {
         width: 90px;
     }
     .sick__item {
         font-size: 19px;
-        padding-right: 90px;
+        padding-right: 70px;
     }
     .message {
-      padding: 70px 30px 45px;
+        padding: 70px 30px 45px;
     }
-    .message--bottom.message__outter{
-      margin-top: -240px;
+    .message--bottom.message__outter {
+        margin-top: -240px;
     }
-    .message--first {
-      margin-top: -300px;
-      margin-bottom: 260px;
+    .sick__how .message--first {
+        margin-top: -300px;
+        margin-bottom: 260px;
     }
     .message__i--outter {
-      left: 30px;
-      top: -38px;
-      width: 76px;
+        left: 30px;
+        top: -38px;
+        width: 76px;
     }
     .message__i--content {
-      font-size: 65px;
+        font-size: 65px;
     }
     .message__text {
-      font-size: 24px;
-      margin-bottom: 35px;
+        font-size: 24px;
+        margin-bottom: 35px;
     }
     .message__link {
-      font-size: 20px;
+        font-size: 20px;
     }
     .message__from {
         top: 100%;
@@ -1164,75 +1197,75 @@
         width: 60px;
         height: 60px;
     }
-    .message::before{
-      top: -140px;
-      right: 30px;
-      width: 171px;
-      height: 171px;
+    .message__rain {
+        top: -140px;
+        right: 30px;
+        width: 171px;
+        height: 171px;
     }
-    .sick__how--title{
-      margin-bottom: 180px;
+    .sick__how--title {
+        margin-bottom: 180px;
     }
-    .sick__how .title__text{
-      font-size: 45px;
-      margin-bottom: 30px;
+    .sick__how .title__text {
+        font-size: 45px;
+        margin-bottom: 30px;
     }
-    .sick__how .sick__subtitle{
-      font-size: 24px;
+    .sick__how .sick__subtitle {
+        font-size: 24px;
     }
-    .sick__how--product{
-      width: 450px;
-      bottom: -530px;
+    .sick__how--product {
+        width: 450px;
+        bottom: -530px;
     }
-    .seasons{
-      margin-bottom: 80px;
+    .seasons {
+        margin-bottom: 80px;
     }
-    .seasons__item{
-      width: 50%;
-      padding-left: 170px;
-      padding-right: 70px;
+    .seasons__item {
+        width: 50%;
+        padding-left: 170px;
+        padding-right: 70px;
     }
-    .seasons__item::before{
-      height: 295px;
+    .seasons__item::before {
+        height: 295px;
     }
-    .seasons__item:first-child{
-      margin-bottom: 0;
+    .seasons__item:first-child {
+        margin-bottom: 0;
     }
-    .seasons__title{
-      font-size: 24px;
+    .seasons__title {
+        font-size: 24px;
     }
-    .seasons__text{
-      font-size: 17px;
+    .seasons__text {
+        font-size: 17px;
     }
-    .use__lenght{
-      margin-bottom: 60px;
+    .use__lenght {
+        margin-bottom: 60px;
     }
     .use__lenght--item {
         font-size: 15px;
     }
-    .dose{
-      padding: 34px 30px;
-      margin-bottom: 25%;
-      font-size: 0;
+    .dose {
+        padding: 34px 30px;
+        margin-bottom: 25%;
+        font-size: 0;
     }
-    .dose__title{
-      font-size: 45px;
-      margin-bottom: 40px;
+    .dose__title {
+        font-size: 45px;
+        margin-bottom: 40px;
     }
-    .dose__item{
-      margin-bottom: 0;
-      display: inline-block;
-      width: 50%;
-      vertical-align: top;
-      padding-right: 60px;
+    .dose__item {
+        margin-bottom: 0;
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+        padding-right: 60px;
     }
-    .dose__item--title{
-      font-size: 35px;
-      margin-bottom: 20px;
+    .dose__item--title {
+        font-size: 35px;
+        margin-bottom: 20px;
     }
-    .dose__item--text{
-      font-size: 18px;
-      line-height: 1.5;
+    .dose__item--text {
+        font-size: 18px;
+        line-height: 1.5;
     }
 }
 
@@ -1270,12 +1303,6 @@
     .text {
         font-size: 25px;
         width: 100%;
-    }
-    .title__text {
-        font-size: 45px;
-    }
-    .sick__subtitle {
-        font-size: 25px;
     }
 }
 
