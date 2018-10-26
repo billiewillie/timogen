@@ -4,6 +4,7 @@ $(document).ready(function() {
         $('.header__menu').toggleClass('open');
         $('.wrapper').toggleClass('active');
         $('.page__main .main').toggleClass('hidden');
+        $('footer.footer').toggleClass('hidden');
         $('.menu__item').toggleClass('active');
     });
 
@@ -44,7 +45,51 @@ $(document).ready(function() {
         $this.addClass('active');
         $(tabgroup).find('.tab__item').hide();
         $(target).show();
-    })
+    });
+
+    $('.buy__bottom--block--2').hide();
+    $('.buy__bottom--block--1').show();
+    $('.buy__btn').click(function(e) {
+        e.preventDefault();
+        var $this = $(this),
+            tabgroup = '#' + $this.parents('.buy__btn--list').data('tabgroup'),
+            others = $this.siblings('a'),
+            target = $this.attr('href');
+        others.removeClass('active');
+        $this.addClass('active');
+        $(tabgroup).find('.buy__bottom--block').hide();
+        $(target).show();
+    });
+
+    // $('.buy__table').hide();
+    // $('#city-tab1').show();
+    // $('.city').click(function(e) {
+    //     e.preventDefault();
+    //     var $this = $(this),
+    //         tabgroup = '#' + $this.parents('.cities').data('tabgroup'),
+    //         others = $this.siblings('a'),
+    //         target = $this.attr('href');
+    //     others.removeClass('active');
+    //     $this.addClass('active');
+    //     $(tabgroup).find('.buy__table').hide();
+    //     $(target).show();
+    // });
+
+    if($('.school__list').length){
+
+      $('.school__tab--all').addClass('active');
+
+      function big(e){
+        var school__item = $('.school__item');
+        for (var i=0; i<3; i++) {
+          school__item[i].classList.add('big');
+        }
+      }
+      big();
+
+    }
+
+    
 
     if (window.innerWidth > 991 && $('.page__promo').length) {
         $(".animsition__left").animsition({
@@ -190,7 +235,7 @@ $(window).mousemove(function(e) {
 $(window).on('scroll', function(e) {
 
     var height = $(document).height();
-    var bottomHeight = $('.sick__how').height()
+    var bottomHeight = $('.sick__how').height();
     var headerHeight = $('.header').height();
     var buttonHeight = $('.sick__button').height();
     var footerHeight = $('footer').height();
@@ -214,10 +259,77 @@ $(window).on('scroll', function(e) {
 
 });
 
-wow = new WOW({
-    boxClass: 'wow', // default
-    animateClass: 'animated', // default
-    mobile: false, // default
+
+if ($('.wow').length){
+  wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    mobile: false,
     duration: 5000,
-})
-wow.init();
+  })
+  wow.init();
+}
+
+if (window.innerWidth < 768){
+
+  $(function() {
+    var Accordion = function(el, multiple) {
+      this.el = el || {};
+      this.multiple = multiple || false;
+
+      // Variables privadas
+      var links = this.el.find('.menu__title');
+      // Evento
+      links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+    }
+
+    Accordion.prototype.dropdown = function(e) {
+      var $el = e.data.el;
+        $this = $(this),
+        $next = $this.next();
+
+      $next.slideToggle('fast');
+      $this.parent().toggleClass('open');
+
+      if (!e.data.multiple) {
+        $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+      };
+    } 
+
+    var accordion = new Accordion($('#accordion'), false);
+  });
+
+}
+
+if($('.school__list').length){
+
+  var selectedClass = "";
+  $(".school__tab").click(function(e){ 
+    $(".school__tab").removeClass('active');
+    $(this).addClass('active');
+    $(".school__list").toggleClass('hidden');
+    $(".school__item").removeClass('big');
+    selectedClass = $(this).attr("data-rel"); 
+    if(selectedClass === 'all'){
+      $(".school__item").not("."+selectedClass).fadeOut();
+      setTimeout(function() {
+        var selected = $('.all');
+        for (var i=0; i<3; i++) {
+          selected[i].classList.add('big');
+        }
+        selected.fadeIn();
+        $(".school__list").toggleClass('hidden');
+      }, 100); 
+    } else {
+      $(".school__item").not("."+selectedClass).fadeOut();
+      setTimeout(function() {
+        var selected = $("."+selectedClass);
+        for (var i=0; i<1; i++) {
+          selected[i].classList.add('big');
+        }
+        selected.fadeIn();
+        $(".school__list").toggleClass('hidden');
+      }, 100); 
+    }
+  });
+}
