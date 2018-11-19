@@ -16,13 +16,13 @@
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {
-                w.yaCounter50776879 = new Ya.Metrika2({
-                    id:50776879,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
+              w.yaCounter50776879 = new Ya.Metrika2({
+                id:50776879,
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+              });
             } catch(e) { }
         });
 
@@ -38,7 +38,11 @@
         } else { f(); }
     })(document, window, "yandex_metrika_callbacks2");
 	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/50776879" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<noscript>
+		<div>
+			<img src="https://mc.yandex.ru/watch/50776879" style="position:absolute; left:-9999px;" alt="" />
+		</div>
+	</noscript>
 	<!-- /Yandex.Metrika counter -->
 </head>
 <body class='page__main'>
@@ -49,7 +53,7 @@
 					<div class="row">
 						<div class="col-8 col-md-6">
 							<a href='general.html' class="logo">
-								<img src="img/logo_straight.png" alt="">
+								<img src="img/logo.svg" alt="">
 							</a>
 						</div>
 						<div class="col-4 col-md-6 header__right">
@@ -78,21 +82,20 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-md-6">
-
 						<div class="menu__list">
 							<p class="menu__title menu__title--1">О препарате <span class="menu__title--icon"></span></p>
 							<ul class="submenu">
 								<li class="menu__item">
-									<a href='' class='menu__item-text'>Состав и принцип действия</a> 
+									<a href='' class='menu__item-text'>Состав и принцип действия</a>
 								</li>
 								<li class="menu__item">
-									<a href='' class='menu__item-text'>Как и когда применять</a> 
+									<a href='' class='menu__item-text'>Как и когда применять</a>
 								</li>
 								<li class="menu__item">
-									<a href='' class='menu__item-text'>Почему спрей лучше?</a> 
+									<a href='why.html' class='menu__item-text'>Почему спрей лучше?</a>
 								</li>
 								<li class="menu__item">
-									<a href='instruction.html' class='menu__item-text'>Инструкция</a> 
+									<a href='instruction.html' class='menu__item-text'>Инструкция</a>
 								</li>
 							</ul>
 						</div>
@@ -104,7 +107,7 @@
 									<a href='chbd.html' class='menu__item-text'>Часто болеющие дети</a> 
 								</li>
 								<li class="menu__item">
-									<a href='' class='menu__item-text'>При ослабленном иммунитете</a> 
+									<a href='immunitet_children.html' class='menu__item-text'>При ослабленном иммунитете</a>  
 								</li>
 								<li class="menu__item">
 									<a href='climat_children.html' class='menu__item-text'>При смене климата</a> 
@@ -144,7 +147,7 @@
 									<a href='pokazaniya-adult.html' class='menu__item-text'>Для восстановления слизистой носа</a> 
 								</li>
 								<li class="menu__item">
-									<a href='' class='menu__item-text'>При ринопластике, септопластике, синуслифтинге</a> 
+									<a href='operations.html' class='menu__item-text'>При ринопластике, септопластике, синуслифтинге</a>  
 								</li>
 							</ul>
 						</div>
@@ -156,7 +159,7 @@
 									<a href='' class='menu__item-text'>Регистрационные удостоверения</a> 
 								</li>
 								<li class="menu__item">
-									<a href='' class='menu__item-text'>Доказательная база</a> 
+									<a href='proof.html' class='menu__item-text'>Доказательная база</a>  
 								</li>
 							</ul>
 						</ul>
@@ -177,7 +180,7 @@
 								<a href="general.html" class="menu__bottom--item--link">Главная</a>
 							</li>
 							<li class="menu__bottom--item">
-								<a href="" class="menu__bottom--item--link">Вопрос-ответ</a>
+								<a href="question.html" class="menu__bottom--item--link">Вопрос-ответ</a>
 							</li>
 							<li class="menu__bottom--item">
 								<a href="buy.html" class="menu__bottom--item--link">Где купить</a>
@@ -193,11 +196,11 @@
 			<div class="header__bar hidden-lg-up">
 				<div class="container-fluid">
 					<div class="row">
-						<a href="" class="header__bar--item">
+						<a href="buy.html" class="header__bar--item">
 							<span class='bar--icon'></span>
 							<span>где купить</span>
 						</a>
-						<a href="" class="header__bar--item">
+						<a href="question.html" class="header__bar--item">
 							<span class='bar--icon'></span>
 							<span>задать вопрос</span>
 						</a>
@@ -244,8 +247,9 @@
 							<span data-rel="all" class="school__tab school__tab--all">Все статьи</span>
 							<span data-rel="adult" class="school__tab">Взрослым</span>
 							<span data-rel="kids" class="school__tab">Детям</span>
-							<span data-rel="chbd" class="school__tab">Часто болеющие дети</span>
 							<span data-rel="immunitet" class="school__tab">Иммунитет</span>
+							<span data-rel="chbd" class="school__tab">Часто болеющие дети</span>
+							
 							<span data-rel="acclim" class="school__tab">Акклиматизация</span>
 							<span data-rel="gripp" class="school__tab">ОРВИ и грипп</span>
 							<span data-rel="lor" class="school__tab">Лор-операции</span>
@@ -264,103 +268,277 @@
 					<div class="row">
 						<div class="col-12">
 							<div class="school__list">
-								<div class="school__item all kids">
+								<div class="school__item kids">
 									<div class="school__ratio">
 										<a href='' class="school__ratio--content">
 											<span class="school__ratio--blur">
 												<img src="img/thumb-1.jpg" alt="">
 											</span>
-											<span class="school__ratio--title">Детям запись 1</span>
+											<span class="school__ratio--title">Можно ли гулять ребенку при ОРВИ?</span>
 											<img src="img/thumb-1.jpg" alt="">
 										</a>
 									</div>
 									<div class="school__preview">
-										<p class="preview__title">Детям запись 1</p>
+										<p class="preview__title">Можно ли гулять ребенку при ОРВИ?</p>
 										<p class="preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, nesciunt error dolores consectetur fugit suscipit! Soluta nihil eaque ex.</p>
 										<a class='preview__link' href="">Читать статью</a>
 									</div>
 								</div>
-								<div class="school__item all adult">
+								<div class="school__item kids">
 									<div class="school__ratio">
 										<a href='' class="school__ratio--content">
 											<span class="school__ratio--blur">
-												<img src="img/thumb-1.jpg" alt="">
+												<img src="img/thumb-2.jpg" alt="">
 											</span>
-											<span class="school__ratio--title">Детям запись 1</span>
-											<img src="img/thumb-1.jpg" alt="">
+											<span class="school__ratio--title">Набор витаминов для ребенка осенью</span>
+											<img src="img/thumb-2.jpg" alt="">
 										</a>
 									</div>
 									<div class="school__preview">
-										<p class="preview__title">Детям запись 1</p>
+										<p class="preview__title">Набор витаминов для ребенка осенью</p>
 										<p class="preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, nesciunt error dolores consectetur fugit suscipit! Soluta nihil eaque ex.</p>
 										<a class='preview__link' href="">Читать статью</a>
 									</div>
 								</div>
-								<div class="school__item all chbd">
+								<div class="school__item kids">
 									<div class="school__ratio">
 										<a href='' class="school__ratio--content">
 											<span class="school__ratio--blur">
-												<img src="img/thumb-1.jpg" alt="">
+												<img src="img/thumb-3.jpg" alt="">
 											</span>
-											<span class="school__ratio--title">Детям запись 1</span>
-											<img src="img/thumb-1.jpg" alt="">
+											<span class="school__ratio--title">Источник силы для детей при простуде</span>
+											<img src="img/thumb-3.jpg" alt="">
 										</a>
 									</div>
 									<div class="school__preview">
-										<p class="preview__title">Детям запись 1</p>
+										<p class="preview__title">Источник силы для детей при простуде</p>
 										<p class="preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, nesciunt error dolores consectetur fugit suscipit! Soluta nihil eaque ex.</p>
 										<a class='preview__link' href="">Читать статью</a>
 									</div>
 								</div>
-								<div class="school__item all immunitet">
+								<div class="school__item adult">
 									<div class="school__ratio">
 										<a href='' class="school__ratio--content">
 											<span class="school__ratio--blur">
 												<img src="img/thumb-1.jpg" alt="">
 											</span>
-											<span class="school__ratio--title">Иммунитет запись 1</span>
+											<span class="school__ratio--title">Возможно ли применение Цитовир-3 и Тимоген совместно?</span>
 											<img src="img/thumb-1.jpg" alt="">
 										</a>
 									</div>
 									<div class="school__preview">
-										<p class="preview__title">Иммунитет запись 1</p>
+										<p class="preview__title">Возможно ли применение Цитовир-3 и Тимоген совместно?</p>
 										<p class="preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, nesciunt error dolores consectetur fugit suscipit! Soluta nihil eaque ex.</p>
 										<a class='preview__link' href="">Читать статью</a>
 									</div>
 								</div>
-								<div class="school__item all gripp">
+								<div class="school__item adult">
 									<div class="school__ratio">
 										<a href='' class="school__ratio--content">
 											<span class="school__ratio--blur">
 												<img src="img/thumb-1.jpg" alt="">
 											</span>
-											<span class="school__ratio--title">Детям запись 1</span>
+											<span class="school__ratio--title">Может ли Тимоген вызвать повышение температуры?</span>
 											<img src="img/thumb-1.jpg" alt="">
 										</a>
 									</div>
 									<div class="school__preview">
-										<p class="preview__title">Детям запись 1</p>
+										<p class="preview__title">Может ли Тимоген вызвать повышение температуры?</p>
 										<p class="preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, nesciunt error dolores consectetur fugit suscipit! Soluta nihil eaque ex.</p>
 										<a class='preview__link' href="">Читать статью</a>
 									</div>
 								</div>
-								<div class="school__item all immunitet">
+								<div class="school__item chbd">
 									<div class="school__ratio">
 										<a href='' class="school__ratio--content">
 											<span class="school__ratio--blur">
 												<img src="img/thumb-1.jpg" alt="">
 											</span>
-											<span class="school__ratio--title">Иммунитет запись 1</span>
+											<span class="school__ratio--title">Болею поллинозом, использовал Вилозен</span>
 											<img src="img/thumb-1.jpg" alt="">
 										</a>
 									</div>
 									<div class="school__preview">
-										<p class="preview__title">Иммунитет запись 1</p>
+										<p class="preview__title">Болею поллинозом, использовал Вилозен</p>
 										<p class="preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, nesciunt error dolores consectetur fugit suscipit! Soluta nihil eaque ex.</p>
 										<a class='preview__link' href="">Читать статью</a>
 									</div>
+								</div>
+								<div class="school__item chbd">
+									<div class="school__ratio">
+										<a href='' class="school__ratio--content">
+											<span class="school__ratio--blur">
+												<img src="img/thumb-1.jpg" alt="">
+											</span>
+											<span class="school__ratio--title">Ребенку 4 года (часто болеющий), по назначению педиатра</span>
+											<img src="img/thumb-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="school__preview">
+										<p class="preview__title">Ребенку 4 года (часто болеющий), по назначению педиатра</p>
+										<p class="preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, nesciunt error dolores consectetur fugit suscipit! Soluta nihil eaque ex.</p>
+										<a class='preview__link' href="">Читать статью</a>
+									</div>
+								</div>
+								<div class="school__item gripp">
+									<div class="school__ratio">
+										<a href='' class="school__ratio--content">
+											<span class="school__ratio--blur">
+												<img src="img/thumb-1.jpg" alt="">
+											</span>
+											<span class="school__ratio--title">Как повысить иммунитет у ребенка?</span>
+											<img src="img/thumb-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="school__preview">
+										<p class="preview__title">Как повысить иммунитет у ребенка?</p>
+										<p class="preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, nesciunt error dolores consectetur fugit suscipit! Soluta nihil eaque ex.</p>
+										<a class='preview__link' href="">Читать статью</a>
+									</div>
+								</div>
+								<div class="school__item gripp">
+									<div class="school__ratio">
+										<a href='' class="school__ratio--content">
+											<span class="school__ratio--blur">
+												<img src="img/thumb-1.jpg" alt="">
+											</span>
+											<span class="school__ratio--title">Часто болеющий ребенок. Как бороться с данной проблемой?</span>
+											<img src="img/thumb-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="school__preview">
+										<p class="preview__title">Часто болеющий ребенок. Как бороться с данной проблемой?</p>
+										<p class="preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, nesciunt error dolores consectetur fugit suscipit! Soluta nihil eaque ex.</p>
+										<a class='preview__link' href="">Читать статью</a>
+									</div>
+								</div>
+								<div class="school__item immunitet">
+									<div class="school__ratio">
+										<a href='' class="school__ratio--content">
+											<span class="school__ratio--blur">
+												<img src="img/thumb-1.jpg" alt="">
+											</span>
+											<span class="school__ratio--title">Как лечить риносинусит у детей</span>
+											<img src="img/thumb-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="school__preview">
+										<p class="preview__title">Как лечить риносинусит у детей</p>
+										<p class="preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, nesciunt error dolores consectetur fugit suscipit! Soluta nihil eaque ex.</p>
+										<a class='preview__link' href="">Читать статью</a>
+									</div>
+								</div>
+								<div class="school__item immunitet">
+									<div class="school__ratio">
+										<a href='' class="school__ratio--content">
+											<span class="school__ratio--blur">
+												<img src="img/thumb-1.jpg" alt="">
+											</span>
+											<span class="school__ratio--title">Это нужно знать каждому родителю</span>
+											<img src="img/thumb-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="school__preview">
+										<p class="preview__title">Это нужно знать каждому родителю</p>
+										<p class="preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, nesciunt error dolores consectetur fugit suscipit! Soluta nihil eaque ex.</p>
+										<a class='preview__link' href="">Читать статью</a>
+									</div>
+								</div>
+								<div class="school__item immunitet">
+									<div class="school__ratio">
+										<a href='' class="school__ratio--content">
+											<span class="school__ratio--blur">
+												<img src="img/thumb-1.jpg" alt="">
+											</span>
+											<span class="school__ratio--title">Все родители любят своих детей</span>
+											<img src="img/thumb-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="school__preview">
+										<p class="preview__title">Все родители любят своих детей</p>
+										<p class="preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, nesciunt error dolores consectetur fugit suscipit! Soluta nihil eaque ex.</p>
+										<a class='preview__link' href="">Читать статью</a>
+									</div>
+								</div>
+								<div class="school__item acclim">
+									<div class="school__ratio">
+										<a href='' class="school__ratio--content">
+											<span class="school__ratio--blur">
+												<img src="img/thumb-1.jpg" alt="">
+											</span>
+											<span class="school__ratio--title">Родители проявляют к детям заботу</span>
+											<img src="img/thumb-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="school__preview">
+										<p class="preview__title">Родители проявляют к детям заботу</p>
+										<p class="preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, nesciunt error dolores consectetur fugit suscipit! Soluta nihil eaque ex.</p>
+										<a class='preview__link' href="">Читать статью</a>
+									</div>
+								</div>
+								<div class="school__item acclim">
+									<div class="school__ratio">
+										<a href='' class="school__ratio--content">
+											<span class="school__ratio--blur">
+												<img src="img/thumb-1.jpg" alt="">
+											</span>
+											<span class="school__ratio--title">Родители проявляют к детям заботу</span>
+											<img src="img/thumb-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="school__preview">
+										<p class="preview__title">Родители проявляют к детям заботу</p>
+										<p class="preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, nesciunt error dolores consectetur fugit suscipit! Soluta nihil eaque ex.</p>
+										<a class='preview__link' href="">Читать статью</a>
+									</div>
+								</div>
+								<div class="school__item lor">
+									<div class="school__ratio">
+										<a href='' class="school__ratio--content">
+											<span class="school__ratio--blur">
+												<img src="img/thumb-1.jpg" alt="">
+											</span>
+											<span class="school__ratio--title">Родители проявляют к детям заботу</span>
+											<img src="img/thumb-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="school__preview">
+										<p class="preview__title">Родители проявляют к детям заботу</p>
+										<p class="preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, nesciunt error dolores consectetur fugit suscipit! Soluta nihil eaque ex.</p>
+										<a class='preview__link' href="">Читать статью</a>
+									</div>
+								</div>
+								<div class="school__item lor">
+									<div class="school__ratio">
+										<a href='' class="school__ratio--content">
+											<span class="school__ratio--blur">
+												<img src="img/thumb-1.jpg" alt="">
+											</span>
+											<span class="school__ratio--title">Родители проявляют к детям заботу</span>
+											<img src="img/thumb-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="school__preview">
+										<p class="preview__title">Родители проявляют к детям заботу</p>
+										<p class="preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio, nesciunt error dolores consectetur fugit suscipit! Soluta nihil eaque ex.</p>
+										<a class='preview__link' href="">Читать статью</a>
+									</div>
+								</div>
+								<div class="advice">
+									<span class="advice__title">совет педиатра</span>
+									<p class="advice__text">Не спешите сбивать высокую температуру (до 38,5°). Жар означает, что организм успешно борется с инфекцией.</p>
+									<p class="advice__text">Делать прививки можно только здоровому ребенку. Если у малыша обострение аллергии, ОРВИ и т.д. – с вакцинацией стоит повременить.</p>
+									<p class="advice__text">Не увлекайтесь сосудосуживающими каплями от насморка. Часто можно обойтись просто солевыми растворами.</p>
+									<p class="advice__text">Главные правила закаливания - постепенность и регулярность. Начните с воздушных ванн, внимательно следите за реакцией ребенка.</p>
+									<p class="advice__text">Аптечные витамины стоит давать детям только по назначению врача после сдачи необходимых анализов.</p>
+									<a href="question.html" class="advice__link">Задать свой вопрос педиатру</a>
 								</div>
 							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="school__count"></div>
 						</div>
 					</div>
 				</div>
@@ -387,14 +565,15 @@
 			<div class="footer__main">
 				<div class="container">
 					<div class="row">
-						<div class="col-12 col-lg-8 footer__copyright">
+						<div class="col-12 col-lg-9 footer__copyright">
 							<div class="footer__text-1">
 								<p class="footer__text-1-1"><span class="year"></span> © ЗАО МБНПК «Цитомед»</p>
 								<p class="footer__text-1-2">Все права защищены</p>
 							</div>
-							<a href='' class="footer__text-2">Политика конфиденциальности</a>
+							<a href='confidential.html' class="footer__text-2">Политика конфиденциальности</a>
+							<a href='agreement.html' class="footer__text-2">Правовое соглашение</a>
 						</div>
-						<div class="col-12 col-lg-4 footer__logo-col">
+						<div class="col-12 col-lg-3 footer__logo-col">
 							<p class="footer__text-3">Сделано в <a href='https://www.mosreklama.net/' class="medor__logo"><img src="img/logo_medor.png" alt=""></a></p>
 						</div>
 					</div>

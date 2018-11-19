@@ -71,6 +71,14 @@
         padding: 60px 0;
     }
 
+    .main.main__question{
+      padding-bottom: 0;
+    }
+
+    .school__main {
+        padding-bottom: 0;
+    }
+
     .main__sick {
         padding: 60px 0 0;
     }
@@ -234,7 +242,7 @@
     }
 
     .medor__logo {
-        margin-bottom: 3px;
+        margin-bottom: 0px;
         margin-left: 3px;
         width: 90px;
     }
@@ -277,11 +285,7 @@
     }
 
     .message__i--outter {
-        top: -19%;
-    }
-
-    .message--bottom .message__i--outter {
-        top: -21%;
+        top: -45px;
     }
 
     .message--first {
@@ -322,19 +326,137 @@
     .instr__table--row:last-child .instr__table--cell {
         padding: 20px 20px 30px;
     }
-    .school__item{
+    
+    .school__item.big{
       display: inline-block;
       width: 32%;
       margin-right: 2%;
     }
+
+    .school__item.big.preview__show .school__ratio{
+      padding-top: 25%;
+      display: inline-block;
+      vertical-align: top;
+      width: 33%;
+    }
+
+    .preview__title{
+      padding-top: 0;
+      font-size: 3vw;
+    }
+
+    .preview__text{
+      font-size: 2vw;
+    }
+
+    .preview__link{
+      font-size: 2vw;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .preview__show .school__preview {
+        display: inline-block;
+        vertical-align: top;
+        width: 65%;
+        margin-left: 2%;
+    }
+
+    .school__item.big.preview__show{
+      width: 100%;
+      margin-right: 0;
+    }
+
     .school__item:nth-child(3){
       margin-right: 0;
     }
 
     .school__ratio--title {
-        padding: 0 2vw 1vh;
-        font-size: 2vw;
+        font-size: 3vw;
     }
+
+    .school__ratio--content{
+      display: inline-block;
+    }
+
+    .school__item.big .school__ratio--title{
+      font-size: 2vw;
+      padding: 0 2vw 1vh;
+    }
+
+    .advice{
+      padding: 2vh 3vw 50vh;
+    }
+
+    .question__icon{
+      width: 3%;
+      height: 4px;
+      margin-top: 2vh;
+    }
+    .question__icon--minus{
+      width: 100%;
+      height: 4px;
+    }
+
+    .guestion__digit{
+      left: -30px;
+      top: 30px;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 35px;
+    }
+
+    .float-label {
+        top: 10px;
+    }
+
+    .input{
+      height: 55px;
+      font-size: 40px;
+    }
+
+    .checkbox .chk-span {
+        height: 20px;
+        width: 20px;
+    }
+
+    .contact_btn{
+      font-size: 3vw;
+    }
+
+    .response__close{
+      width: 40px;
+      height: 40px;
+    }
+
+    .response__title{
+      font-size: 4vw;
+    }
+
+    .response__text{
+      font-size: 3vw;
+    }
+
+    .video__play{
+      width: 90px;
+      height: 90px;
+    }
+
+    .why__how .title__text.sick__list--title::after{
+      bottom: -15px;
+      right: -50px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .immunitet__item::before{
+      top: -5px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+    }
+
 }
 
 @media (max-width: 991px) {
@@ -346,6 +468,7 @@
 @media (min-width: 992px) {
     .page__promo .logo {
         max-width: 300px;
+        width: 100%;
         margin-bottom: 40px;
     }
 
@@ -674,7 +797,7 @@
     }
 
     .logo {
-        max-width: 369px;
+        width: 190px;
     }
 
     .header__inner {
@@ -750,7 +873,7 @@
     }
 
     .page__main .main {
-        padding-top: 200px;
+        padding-top: 170px;
     }
 
     .hidden-lg-up {
@@ -831,11 +954,10 @@
     .footer__text-2 {
         display: inline-block;
         vertical-align: bottom;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .footer__text-1 {
-        border-right: 1px solid #808080;
         padding-right: 12px;
         margin-bottom: 0;
     }
@@ -846,8 +968,9 @@
     }
 
     .footer__text-2 {
-        padding-left: 12px;
+        padding: 0px 12px;
         margin-bottom: 0;
+        border-left: 1px solid #808080;
     }
 
     .footer__text-1 span {
@@ -1118,10 +1241,14 @@
         background-image: url(../img/wave5.png);
     }
 
+    .sick__for.why__for{
+      padding: 50px 0;
+    }
+
     .sick__for.sick__bg-3 {
         padding: 50px 0 110px;
         background-image: url(../img/wave8.png);
-        z-index: 4;
+        z-index: 11;
     }
 
     .sick__for.sick__bg-5 {
@@ -1139,7 +1266,6 @@
         right: 0;
         margin: auto;
         width: 100%;
-
     }
 
     .sick__bg-3 .sick__bg {
@@ -1150,6 +1276,11 @@
         background-image: url(../img/wave7.png);
     }
 
+    .sick__how.why__how{
+      background-image: url(../img/wave23.png);
+      padding: 40px 0 40px;
+    }
+
     .sick__how.sick__virus {
         background-image: none;
     }
@@ -1157,6 +1288,11 @@
     .sick__how.sick__virus .buy__after{
         z-index: -1;
         margin-top: -100px;
+    }
+
+    .operations__bottom .buy__after{
+      margin-top: -150px;
+      z-index: -1;
     }
 
     .sick__how.sick__bg-4 {
@@ -1177,6 +1313,10 @@
     .title__text {
         font-size: 30px;
         margin-bottom: 30px;
+    }
+
+    .title__text.sick__list--title.immunitet__title{
+      margin-top: 30px;
     }
 
     .title__text.sick__list--title {
@@ -1340,6 +1480,10 @@
         top: -43%;
     }
 
+    .why__how .message__outter--above.message--bottom .message__from {
+        top: -37%;
+    }
+
     .message__author {
         width: 100px;
         left: -22%;
@@ -1387,6 +1531,10 @@
         font-size: 30px;
         margin-bottom: 10px;
     }
+    
+    .why__how .title__text.sick__list--title{
+      font-size: 25px;
+    }
 
     .sick__how .sick__subtitle {
         font-size: 15px;
@@ -1399,7 +1547,7 @@
 
     .sick__text{
       font-size: 13px;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
     .sick__how--product {
@@ -1522,6 +1670,16 @@
 
     .message--bottom.message__outter {
         margin-top: -120px;
+        margin-bottom: 0;
+    }
+
+    .why__how .message--bottom.message__outter {
+        margin-top: 120px;
+        margin-bottom: 0;
+    }
+
+    .message--bottom.message--bottom-2.message__outter {
+        margin-top: 0;
         margin-bottom: 0;
     }
 
@@ -1698,7 +1856,7 @@
 
     .buy__object {
         position: absolute;
-        bottom: 0;
+        bottom: -10px;
         right: 0;
         width: 50%;
         max-height: 155%;
@@ -1827,12 +1985,62 @@
     }
 
     .pokazaniya__bush{
-       position: absolute;
-        display: block;
-        z-index: -1;
-        right: 0%;
-        bottom: 70%;
-        width: 13%;
+      position: absolute;
+      display: block;
+      z-index: -1;
+      right: 0%;
+      bottom: 70%;
+      width: 13%;
+    }
+
+    .pokazaniya__bush--2{
+      position: absolute;
+      display: block;
+      z-index: -1;
+      right: -3%;
+      bottom: 80%;
+      width: 30%;
+    }
+    .pokazaniya__bush--5{
+      position: absolute;
+      display: block;
+      z-index: -1;
+      left: -2%;
+      bottom: 90%;
+      width: 10%;
+    }
+    .pokazaniya__bush--4{
+      position: absolute;
+      display: block;
+      z-index: -1;
+      right: -6%;
+      bottom: 0%;
+      width: 20%;
+    }
+    .pokazaniya__bush--6{
+      position: absolute;
+      display: block;
+      z-index: -1;
+      right: 0%;
+      bottom: 80%;
+      width: 30%;
+    }
+    .pokazaniya__tree--3{
+      position: absolute;
+      display: block;
+      z-index: -1;
+      right: 0%;
+      bottom: 5%;
+      width: 15%;
+    }
+
+    .pokazaniya__bush--3{
+      position: absolute;
+      display: block;
+      z-index: -1;
+      right: 50%;
+      bottom: 15%;
+      width: 10%;
     }
     
     .age__content {
@@ -1846,24 +2054,391 @@
       margin-top: -100px;
     }
 
+    .operations-part.sick__how--title{
+        margin-top: -150px;
+        margin-bottom: 60px;
+    }
+
+
+
     .school__tab{
       font-size: 16px;
       padding: 15px 20px;
       margin-right: 15px;
       margin-bottom: 20px;
     }
-    .school__ratio--title {
+    .school__item.big .school__ratio--title {
       padding: 0 20px 20px;
       font-size: 16px;
     }
 
     .school__list {
         margin-top: -70px;
+        margin-bottom: 50px;
+    }
+
+    .article__list .school__list{
+      margin-top: -160px;
     }
 
     .school__ratio:hover .school__ratio--blur{
       opacity: 1;
     }
+
+    .preview__title {
+        font-size: 24px;
+        padding-top: 10px;
+    }
+
+    .preview__text {
+        font-size: 16px;
+    }
+
+    .preview__link {
+      font-size: 16px;
+      bottom: 10px;
+    }
+
+    .school__ratio--title {
+        font-size: 20px;
+    }
+
+    .school__item{
+      width: 66%;
+    }
+
+    .title__text--big{
+      font-size: 40px;
+      margin-bottom: 50px;
+    }
+
+    .text__rules{
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .text__rules--title{
+      font-size: 17px;
+    }
+
+    .school__number{
+      font-size: 24px;
+      margin-right: 20px;
+    }
+
+    .advice{
+      position: absolute;
+      top: 210px;
+      right: 0;
+      width: 32%;
+      padding: 30px 20px 250px;
+    }
+    .advice.clicked{
+      top: 240px;
+    }
+
+    .advice__title{
+      font-size: 11px;
+      margin-bottom: 30px;
+      padding: 10px 15px;
+    }
+
+    .advice__text{
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .advice__link{
+      font-size: 14px;
+    }
+
+    .advice__link::after{
+      width: 12px;
+    }
+    
+    .article__top{
+      padding: 120px;
+      margin-bottom: 70px;
+    }
+
+    .article__top--title{
+      font-size: 45px;
+    }
+
+    .article__text {
+        font-size: 19px;
+    }
+
+    .article__text p {
+        margin-bottom: 30px;
+    }
+
+    .article__text h3{
+      font-size: 24px;
+    }
+
+    .article__content .advice {
+      position: relative;
+      top: 0;
+      margin-top: 0;
+      width: 100%;
+    }
+
+    .question__subs{
+      margin-bottom: 50px;
+    }
+
+    .question__subs .sick__subtitle{
+      font-size: 12px;
+      width: 40%;
+      margin-bottom: 0;
+      padding-right: 20px;
+      line-height: 1.5;
+    }
+
+    .question__button{
+      width: auto;
+    }
+
+    .question__button button{
+      font-size: 15px;
+      padding: 15px;
+    }
+
+    .sick__subtitle--icon{
+      padding-left: 50px;
+    }
+
+    .sick__subtitle--icon::before{
+      width: 45px;
+    }
+
+    .question__title{
+      font-size: 20px;
+    }
+
+    .question__item.special .question__title{
+      font-size: 24px;
+    }
+
+    .page_link{
+      font-size: 24px;
+      margin-right: 20px;
+    }
+
+    .question__bottom--title{
+      font-size: 19px;
+    }
+
+    .question__bottom--text{
+      font-size: 16px;
+    }
+
+    .question__icon{
+      width: 10px;
+      height: 2px;
+      margin-top: 10px;
+    }
+    .question__icon--minus{
+      width: 10px;
+      height: 2px;
+    }
+
+    .question__list #content{
+      margin-bottom: 90px;
+    }
+
+    .question__item.special .question__title{
+      padding: 60px 80px;
+      width: 96%;
+      margin-left: 4%;
+    }
+
+    .guestion__digit{
+      height: 90px;
+      width: 90px;
+      font-size: 45px;
+      line-height: 90px;
+      left: -45px;
+      top: 48px;
+    }
+
+    .question__bottom{
+      padding-left: 25px;
+    }
+
+    .guestion__arrow{
+      display: block;
+      position: absolute;
+      right: 30px;
+      top: 70px;
+      width: 29px;
+      height: 36px;
+    }
+
+    .question__form--title {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    .float-label{
+      font-size: 19px;
+      top: 25px;
+    }
+
+    .form__field{
+      margin-bottom: 30px;
+      width: 330px;
+    }
+
+    .input{
+      font-size: 19px;
+    }
+
+    .input:focus ~ .float-label, 
+    .input:valid ~ .float-label {
+        top: 0px;
+        font-size: 10px;
+    }
+
+    .form__field--textarea .input:focus ~ .float-label, 
+    .form__field--textarea .input:valid ~ .float-label{
+      top: -14px;
+    }
+
+    .checkbox{
+      font-size: 12px;
+    }
+
+    .form__bottom{
+      width: 400px;
+    }
+
+    .contact_btn{
+      padding: 15px 25px;
+      font-size: 16px;
+    }
+
+    .question__form.active{
+      padding: 45px 25px;
+      background-image: url(../img/question-bg-big.png);
+    }
+
+    .response__close{
+      width: 70px;
+      height: 70px;
+    }
+
+    .response__title{
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+
+    .response__text{
+      font-size: 19px;
+      margin-bottom: 40px;
+    }
+
+    .response.active{
+      padding: 40px 50px;
+    }
+
+    .main__question .main__text{
+      background-image: url(../img/question.png);
+      -webkit-background-size: 100%;
+      background-size: 100%;
+      background-position: 100% 0%;
+      background-repeat: no-repeat;
+      min-height: 1000px;
+    }
+
+    .main__question .sick__button{
+      background-color: #edeef2;
+    }
+
+    .question__item{
+      padding-left: 35px;
+    }
+
+    .question__item.special{
+      padding-left: 0;
+    }
+
+    .question__item.special .question__bottom{
+      padding-left: 30px;
+    }
+
+    .why__video--outter{
+      position: absolute;
+      right: 105%;
+      top: 5%;
+      width: 450px;
+    }
+
+    .why__video--cover {
+        position: relative;
+        width: 450px;
+        height: 400px;
+        right: -50px;
+    }
+
+    .why__how .title__text.sick__list--title::after {
+        bottom: auto;
+        right: 50%;
+        width: 40px;
+        height: 40px;
+        transform: rotate(0deg);
+    }
+
+    .immunitet__item::before{
+      top: -8px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 16px;
+    }
+
+    .immunitet__item{
+      padding-left: 50px;
+      margin-bottom: 40px;
+      font-size: 12px;
+    }
+
+    .immunitet__text {
+        font-size: 12px;
+    }
+
+    .immunitet__list {
+        margin-bottom: 40px;
+    }
+
+    .proof__item{
+      margin-bottom: 50px;
+    }
+
+    .proof__from{
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .proof__title{
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .proof__authors{
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .proof__text{
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .proof__link{
+      font-size: 14px;
+      padding: 20px 25px 20px 50px;
+    }
+
 }
 
 @media (max-width: 1199px){
@@ -1957,6 +2532,10 @@
 
     .title__text.sick__list--title {
         font-size: 32px;
+    }
+
+    .title__text.sick__list--title.immunitet__title {
+        margin-top: 50px;
     }
 
     .subtitle {
@@ -2115,6 +2694,10 @@
         top: -32%;
     }
 
+    .why__how .message__outter--above.message--bottom .message__from {
+        top: -27%;
+    }
+
     .message__outter--above.message--bottom .message__author {
         top: -70%;
     }
@@ -2229,6 +2812,85 @@
 
     .sick__text{
       font-size: 17px;
+    }
+
+    .operations__bottom .buy__after{
+      margin-top: -350px;
+    }
+
+    .advice{
+      top: 250px;
+      padding: 40px 30px 350px;
+    }
+    .advice.clicked{
+      top: 280px;
+    }
+
+    .advice__title{
+      margin-bottom: 50px;
+    }
+
+    .advice__text{
+      font-size: 16px;
+      margin-bottom: 50px;
+    }
+
+    .advice__link{
+      font-size: 19px;
+    }
+
+    .advice__link::after{
+      width: 15px;
+    }
+
+    .question__bottom{
+      padding-left: 4%;
+    }
+
+    .immunitet__item::before{
+      top: -6px;
+      font-size: 20px;
+    }
+
+    .immunitet__item{
+      padding-left: 70px;
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
+
+    .immunitet__text{
+      font-size: 19px;
+    }
+
+    .immunitet__list {
+        margin-bottom: 65px;
+    }
+
+    .proof__item{
+      margin-bottom: 70px;
+    }
+
+    .proof__from{
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    .proof__title{
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+    .proof__authors{
+      font-size: 19px;
+      margin-bottom: 30px;
+    }
+
+    .proof__text{
+      font-size: 19px;
+      margin-bottom: 30px;
+    }
+
+    .proof__link{
+      font-size: 19px;
+      padding: 20px 25px 20px 50px;
     }
 }
 
@@ -2360,6 +3022,10 @@
         font-size: 23px;
     }
 
+    .why__how .title__text.sick__list--title{
+      font-size: 32px;
+    }
+
     .dose__title {
         font-size: 45px;
         margin-bottom: 40px;
@@ -2378,13 +3044,121 @@
       font-size: 24px;
     }
     .school__tab{
-      font-size: 18px;
+      font-size: 16px;
       padding: 20px 30px;
       margin-right: 20px;
       margin-bottom: 30px;
     }
     .school__list {
         margin-top: -140px;
+    }
+    .operations__bottom .buy__after{
+      margin-top: -450px;
+    }
+
+    .school__item.big .school__ratio--title {
+        font-size: 24px;
+    }
+
+    .preview__title {
+        font-size: 32px;
+        padding-top: 45px;
+    }
+
+    .preview__text {
+        font-size: 19px;
+    }
+
+    .preview__link {
+        font-size: 19px;
+        bottom: 45px;
+    }
+
+    .text__rules{
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .title__text--big{
+      font-size: 45px;
+      margin-bottom: 70px;
+    }
+
+    .text__rules--title{
+      font-size: 19px;
+    }
+
+    .sick__how.sick__virus .buy__after{
+      margin-top: -300px;
+    }
+
+    .advice{
+      top: 310px;
+    }
+    
+    .advice.clicked{
+      top: 350px;
+    }
+
+    .school__content{
+      min-height: 900px;
+    }
+
+    .article__part{
+      padding-bottom: 100px;
+    }
+
+    .article__list .school__list {
+      margin-top: -240px;
+    }
+
+    .question__subs .sick__subtitle{
+      font-size: 18px;
+      padding-right: 30px;
+    }
+
+    .question__button button{
+      font-size: 18px;
+      padding: 20px;
+    }
+
+    .sick__subtitle--icon{
+      padding-left: 70px;
+    }
+
+    .question__subs{
+      margin-bottom: 70px;
+    }
+
+    .question__bottom{
+      padding-left: 30px;
+    }
+
+    .question__item.special .question__bottom {
+        padding-left: 45px;
+    }
+
+    .question__item {
+        padding-left: 45px;
+    }
+
+    .why__video--outter{
+      right: 110%;
+      top: 5%;
+      width: 600px;
+    }
+
+    .why__video--cover {
+        width: 600px;
+        height: 550px;
+    }
+
+    .why__how .title__text.sick__list--title::after {
+        bottom: auto;
+        right: 70%;
+        width: 40px;
+        height: 40px;
+        transform: rotate(0deg);
     }
 }
 

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Timogen</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function(d, w, c) {
+          (w[c] = w[c] || []).push(function() {
+              try {
+                  w.yaCounter50776879 = new Ya.Metrika2({
+                      id: 50776879,
+                      clickmap: true,
+                      trackLinks: true,
+                      accurateTrackBounce: true,
+                      webvisor: true
+                  });
+              } catch (e) {}
+          });
+
+          var n = d.getElementsByTagName("script")[0],
+              s = d.createElement("script"),
+              f = function() { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+      })(document, window, "yandex_metrika_callbacks2");
+    </script>
+    <noscript>
+      <div>
+        <img src="https://mc.yandex.ru/watch/50776879" style="position:absolute; left:-9999px;" alt="" />
+      </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+
+<body class='page__main'>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__inner">
+                <div class="container-fluid header__inner--container">
+                    <div class="row">
+                        <div class="col-8 col-md-6">
+                            <a href='general.html' class="logo">
+                        <img src="img/logo.svg" alt="">
+                      </a>
+                        </div>
+                        <div class="col-4 col-md-6 header__right">
+                            <div class="header__crumbs hidden-md-down">
+                                <a href='buy.html' class="header__crumbs--item"></a>
+                                <div class="header__crumbs--item">
+                                    <form class='header__form'>
+                                        <input class='header__input' type="search" placeholder="Search">
+                                    </form>
+                                </div>
+                            </div>
+                            <a class="menu">
+                        <div class='menu__word hidden-md-down'>меню</div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header__menu" id='accordion'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="menu__list">
+                            <p class="menu__title menu__title--1">О препарате <span class="menu__title--icon"></span></p>
+                            <ul class="submenu">
+                                <li class="menu__item">
+                                    <a href='' class='menu__item-text'>Состав и принцип действия</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href='' class='menu__item-text'>Как и когда применять</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href='why.html' class='menu__item-text'>Почему спрей лучше?</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href='instruction.html' class='menu__item-text'>Инструкция</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="menu__list">
+                            <p class="menu__title menu__title--2">ТИМОГЕН - детям <span class="menu__title--icon"></span></p>
+                            <ul class="submenu">
+                                <li class="menu__item">
+                                    <a href='chbd.html' class='menu__item-text'>Часто болеющие дети</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href='immunitet_children.html' class='menu__item-text'>При ослабленном иммунитете</a> 
+                                </li>
+                                <li class="menu__item">
+                                    <a href='climat_children.html' class='menu__item-text'>При смене климата</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href='pressure-children.html' class='menu__item-text'>При повышенных физических и эмоциональных нагрузках</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href='priv.html' class='menu__item-text'>Перед прививками</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href='virus-children.html' class='menu__item-text'>В период повышенной заболеваемости</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href='pokazaniya-children.html' class='menu__item-text'>Для восстановления слизистой носа</a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="menu__list">
+                            <p class="menu__title menu__title--3">ТИМОГЕН – взрослым <span class="menu__title--icon"></span></p>
+                            <ul class="submenu">
+                                <li class="menu__item">
+                                    <a href='' class='menu__item-text'>При ослабленном иммунитете</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href='climat.html' class='menu__item-text'>При смене климата</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href='pressure-adult.html' class='menu__item-text'>При повышенных физических и эмоциональных нагрузках</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href='virus-adult.html' class='menu__item-text'>В период повышенной заболеваемости</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href='pokazaniya-adult.html' class='menu__item-text'>Для восстановления слизистой носа</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href='operations.html' class='menu__item-text'>При ринопластике, септопластике, синуслифтинге</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="menu__list">
+                            <p class="menu__title menu__title--4">Специалистам <span class="menu__title--icon"></span></p>
+                            <ul class="submenu">
+                                <li class="menu__item">
+                                    <a href='' class='menu__item-text'>Регистрационные удостоверения</a>
+                                </li>
+                                <li class="menu__item">
+                                  <a href='proof.html' class='menu__item-text'>Доказательная база</a> 
+                                </li>
+                            </ul>
+                        </ul>
+                        <ul class="menu__list">
+                            <p class="menu__title menu__title--5">Школа здоровья <span class="menu__title--icon"></span></p>
+                            <ul class="submenu">
+                                <li class="menu__item">
+                                    <a href='' class='menu__item-text'>Полезные статьи и рекомендации специалистов</a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <ul class="menu__bottom">
+                            <li class="menu__bottom--item">
+                                <a href="general.html" class="menu__bottom--item--link">Главная</a>
+                            </li>
+                            <li class="menu__bottom--item">
+                                <a href="question.html" class="menu__bottom--item--link">Вопрос-ответ</a>
+                            </li>
+                            <li class="menu__bottom--item">
+                                <a href="buy.html" class="menu__bottom--item--link">Где купить</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="main main__question">
+            <div class="header__bar hidden-lg-up">
+                <div class="container-fluid">
+                    <div class="row">
+                        <a href="buy.html" class="header__bar--item">
+                          <span class='bar--icon'></span>
+                          <span>где купить</span>
+                        </a>
+                        <a href="question.html" class="header__bar--item">
+                          <span class='bar--icon'></span>
+                          <span>задать вопрос</span>
+                        </a>
+                        <span class="header__bar--item search__mob">
+                          <span class='bar--icon'></span>
+                          <span>поиск</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="header__search--mob">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <form class='form__mob' action="">
+                                  <div class="form__input--wrapper">
+                                    <input class='form__mob--text' type="text" placeholder='поиск по сайту' autofocus>
+                                  </div>
+                                  <button class='form__mob--btn' type="submit">искать</button>
+                                  <span class="form__mob--close">закрыть</span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__text">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-lg-10">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="title__text--big">Вопрос-ответ</p>
+                        </div>
+                        <div class="col-12 question__subs">
+                            <p class="sick__subtitle">Здесь вы сможете прочитать ответы на часто задаваемые вопросы</p>
+                            <p class="sick__subtitle sick__subtitle--icon">Не нашли нужной информации?<br><b>Задайте свой вопрос специалисту</b></p>
+                            <div class="question__button">
+                                <button>Задать вопрос</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question__list">
+                        <!-- the input fields that will hold the variables we will use -->
+                        <input type='hidden' id='current_page' />
+                        <input type='hidden' id='show_per_page' />
+                        <div id='content'>
+                          <div class="question__item">
+                              <div class="question__top">
+                                  <span class="question__icon">
+                                    <span class="question__icon--minus"></span>
+                                  </span>
+                                  <p class='question__title'>Как Тимоген спрей проникает и оказывает действие через слизистую дыхательных путей?</p>
+                              </div>
+                              <div class="question__bottom">
+                                <p class="question__bottom--title">Ответ:</p>
+                                <p class="question__bottom--text">Добрый день,<br>На Ваш вопрос отвечает Сергей Викторович Петленко,<br>Врач-иммунолог, доктор медицинских наук, ведущий научный сотрудник Военно-медицинской академии имени С.М. Кирова, руководитель отдела клинических исследований МБНПК «Цитомед» (Санкт-Петербург).<br>Тимоген проникает через биологические мембраны хорошо, так как молекула очень небольшая.<br>Вопрос в другом — зачем Тимоген должен проникать через слизистую?<br><b>Тимоген</b> прекрасно выполняет свои функции на поверхности слизистых, где, как известно присутствует большое количество иммунокомпетентных клеток в составе диффузной лимфоидной ткани, являющейся барьером для инфекционных агентов.<br>А вот системное действие препарата (в форме спрея) действительно реализуется путем проникновения в мелкие капилляры слизистой оболочки носа, васкуляризация (сосудистая сеть) которой выражена достаточно хорошо.</p>
+                              </div>
+                          </div>
+                          <div class="question__item">
+                              <div class="question__top">
+                                  <span class="question__icon">
+                                    <span class="question__icon--minus"></span>
+                                  </span>
+                                  <p class='question__title'>Полезен ли Тимоген пожилым людям? Может ли он работать как эффективный геропротектор?</p>
+                              </div>
+                              <div class="question__bottom">
+                                <p class="question__bottom--title">Ответ:</p>
+                                <p class="question__bottom--text">На Ваш вопрос отвечает Сергей Викторович Петленко,<br>Врач-иммунолог, доктор медицинских наук, ведущий научный сотрудник Военно-медицинской академии имени С.М. Кирова, руководитель отдела клинических исследований МБНПК «Цитомед» (Санкт-Петербург).<br><b>Тимоген</b>, как иммунотропный препарат, безусловно показан лицам с изменениями иммунологической реактивности. К такой категории пациентов относятся и определенные возрастные категории людей, в частности лица старше 45 лет, у которых отмечаются возрастные изменения иммунной системы.<br>Коррекция иммунологической реактивности оказывает положительное влияние и на процессы старения организма, действуя в рамках нейро-гормонально-иммунной регуляции гомеостаза. Кроме того в ряде исследований было установлено положительное влияние Тимогена на содержание холестерина в сыворотке крови.<br>Наши исследования показали, что применение Тимогена в форме назального спрея в течение 14 дней, у пациентов с повышенным содержанием холестерина, способствуют стабилизации его уровня в отсутствие специальной диеты или приема других антигиполипидемических средств.<br>Более подробно об исследованиипримененияТимогена у пациентов при повышенном сахаре и холестеринев публикации на нашем сайте</p>
+                              </div>
+                          </div>
+                          <div class="question__item">
+                            <div class="question__top">
+                              <span class="question__icon">
+                                <span class="question__icon--minus"></span>
+                              </span>
+                              <p class='question__title'>Возможно ли применение Цитовир-3 и Тимоген спрея совместно? Будет ли эффект, не навредит ли?</p>
+                            </div>
+                            <div class="question__bottom">
+                              <p class="question__bottom--title">Ответ:</p>
+                              <p class="question__bottom--text">Уважаемая Александра,<br>мы считаем, что такое применение просто нецелесообразно. Вреда никакого такое применение не принесет, но и какой-то особенной пользы тоже.</p>
+                            </div>
+                          </div>
+                          <div class="question__item">
+                              <div class="question__top">
+                                  <span class="question__icon">
+                                    <span class="question__icon--minus"></span>
+                                  </span>
+                                  <p class='question__title'>Врач прописал ребенку (3,5 года) Тимоген спрей 1 доза х 2 раза в день 2 недели. В инструкции дозировка 1 раз не более 10 дней. Не повредит ли увеличение длительности приема препарата?</p>
+                              </div>
+                              <div class="question__bottom">
+                                <p class="question__bottom--title">Ответ:</p>
+                                <p class="question__bottom--text">Уважаемая Марина,<br>нам достоверно известно из клинических исследований, что увеличение дозы, превышающей терапевтическую даже во много раз не вызывает никаких токсических реакций. Полагаем, что ваш лечащий доктор назначил верное лечение.</p>
+                              </div>
+                          </div>
+                          <div class="question__item">
+                              <div class="question__top">
+                                  <span class="question__icon">
+                                    <span class="question__icon--minus"></span>
+                                  </span>
+                                  <p class='question__title'>Может ли Тимоген спрей вызвать повышение температуры?</p>
+                              </div>
+                              <div class="question__bottom">
+                                <p class="question__bottom--title">Ответ:</p>
+                                <p class="question__bottom--text">Уважаемая Елена,<br>применение назального Тимоген спрея не может вызвать температуру.</p>
+                              </div>
+                          </div>
+                          <div class="question__item">
+                            <div class="question__top">
+                                <span class="question__icon">
+                                  <span class="question__icon--minus"></span>
+                                </span>
+                                <p class='question__title'>Болею поллинозом, раньше в качестве профилактики использовал Вилозен. Можно ли с этой целью применять Тимоген?</p>
+                            </div>
+                            <div class="question__bottom">
+                              <p class="question__bottom--title">Ответ:</p>
+                              <p class="question__bottom--text">Уважаемый Олег,<br>В профилактических целях <b>ТИМОГЕН</b> применять можно.</p>
+                            </div>
+                          </div>
+                          <div class="question__item">
+                            <div class="question__top">
+                                <span class="question__icon">
+                                  <span class="question__icon--minus"></span>
+                                </span>
+                                <p class='question__title'>Ребенку 4 года (часто болеющий), по назначению педиатра применяли Тимоген спрей по 1 дозев каждый носовой ход 3 раза в день 5 дней, а по инструкции нужно значительно меньше. Не навредила ли я ребенку?</p>
+                            </div>
+                            <div class="question__bottom">
+                              <p class="question__bottom--title">Ответ:</p>
+                              <p class="question__bottom--text">Уважаемая Ирина,<br>для беспокойства нет причин. Во-первых, Ваш случай сложно назвать «передозировкой». Во-вторых, превышение дозы такого препарата как <b>ТИМОГЕН</b> не несет никакого негативного воздействия на иммунную систему.</p>
+                            </div>
+                          </div>
+                          <div class="question__item">
+                            <div class="question__top">
+                              <span class="question__icon">
+                                <span class="question__icon--minus"></span>
+                              </span>
+                              <p class='question__title'>Обострился хронический гайморит. ЛОР рекомендовал принимать Тимоген Спрей в комплексе сантибиотиком. Можно ли принимать Тимоген при СКВ и АИТ?</p>
+                            </div>
+                            <div class="question__bottom">
+                              <p class="question__bottom--title">Ответ:</p>
+                              <p class="question__bottom--text">Уважаемая Эльза,<br>Тимоген действительно очень эффективен при приеме антибиотиков, т.к. последние угнетают иммунную систему. При указанных Вами заболеваниях Тимоген принимать можно, не превышая дозировок, и не в период обострений.</p>
+                            </div>
+                          </div>
+                          <div class="question__item">
+                              <div class="question__top">
+                                  <span class="question__icon">
+                                    <span class="question__icon--minus"></span>
+                                  </span>
+                                  <p class='question__title'>Сыну 5 месяцев. Для профилактики дала Тимоген Спрей по 1 дозе в каждую ноздрю. Потом прочитала, что препарат можно с 1 года и только в одну ноздрю. У ребенка появилась гриппоподобная реакция, может ли это быть от препарата, либо он заболел?</p>
+                              </div>
+                              <div class="question__bottom">
+                                <p class="question__bottom--title">Ответ:</p>
+                                <p class="question__bottom--text">Уважаемая Ксения,<br>Скорее всего, гриппоподобный синдром это проявление инфекционного процесса, так как молекула Тимогена обладает очень низкой молекулярной массой и не способна вызвать подобной симптоматики. Конечно, соблюдать режим дозирования нужно, но передозировки Тимогена можно не бояться, так как препарат не токсичен. Если у вашего малыша действительно реакция на применение препарата, то она должна пройти самостоятельно в течение 21-24 часов.<br>С Уважением, д.м.н. Петленко С.В</p>
+                              </div>
+                          </div>
+                          <div class="question__item">
+                              <div class="question__top">
+                                  <span class="question__icon">
+                                    <span class="question__icon--minus"></span>
+                                  </span>
+                                  <p class='question__title'>Можно ли применять одновременно Тимоген Спрей и Авамис? Врач назначил, но в инструкции к Тимогену написано, что с глюкокортикостероидными препаратами совместный прием не рекомендуется.</p>
+                              </div>
+                              <div class="question__bottom">
+                                <p class="question__bottom--title">Ответ:</p>
+                                <p class="question__bottom--text">Уважаемая Ирина,<br>Действительно, совместный прием иммунотропных (тимоген) средств и гормональных противовоспалительных препаратов имеет выраженное противоречие в плане достижения лечебного эффекта.Гормональные средства вызывают функциональную блокаду рецепторного аппарата иммунокомпетентных клеток. А именно на эти структуры воздействует большинство иммунотропных препаратов. Поэтому при назначенной комбинации следует ожидать снижение (или вообще отсутствие) эффекта от приема тимогена.</p>
+                              </div>
+                          </div>
+                          <div class="question__item">
+                            <div class="question__top">
+                              <span class="question__icon">
+                                <span class="question__icon--minus"></span>
+                              </span>
+                              <p class='question__title'>В чём отличие препарата Тимоген от Тимодепрессина, если у них одинаковый составляющий компонент (глутамил-триптофан натрия)?</p>
+                            </div>
+                            <div class="question__bottom">
+                              <p class="question__bottom--title">Ответ:</p>
+                              <p class="question__bottom--text">Добрый день,<br>Если внимательно посмотреть состав действующего вещества то можно заметить разницу: Тимоген – альфа (!) или L- глутамил-Lтриптофан, а Тимодепрессин – D-глутамил-D-триптофан. То есть один препарат представляет собой дипептид, состоящий из «левовращающих» аминокислот, а другой из «правовращающих», которые в биологическом плане являются антагонистами. Считается, что L-аминокислоты обладают стимулирующим действием, а D – изомеры – угнетающим.Отсюда и принципиально разные эффекты от применения лекарственных средств и, соответственно, показания к применению. <br>С Уважением, д.м.н., Петленко С.В.</p>
+                            </div>
+                          </div>
+                          <div class="question__item">
+                            <div class="question__top">
+                                <span class="question__icon">
+                                  <span class="question__icon--minus"></span>
+                                </span>
+                                <p class='question__title'>Чем отличается воздействие Тимоген Спрея от Цитовира-3 в капсулах?</p>
+                            </div>
+                            <div class="question__bottom">
+                              <p class="question__bottom--title">Ответ:</p>
+                              <p class="question__bottom--text">Уважаемая Ирина,<br>Тимоген (в виде спрея или инъекций) оказывает свое воздействие (если имеется какие-либо нарушения клеточного иммунитета) на пролиферацию и дифференцировку лимфоидных клеток которые определяются причиной патологического процесса (бактерии,грибы, вирусы). Поэтому препарат Тимоген, где основное действующее вещество — пептид тимоген, относят к классу иммуностимулирующих препаратов.В препарате Цитовир-3 сочетание тимогена с бендазолом оказывает эффект, ориентированный на стимуляцию выработки эндогенного интерферона, при сохранении воздействия на активацию клеточных механизмов иммунной защиты, опять-таки в случае их нарушений.Препарат Цитовир- 3 является средством лечения человека, заболевшего ОРВИ.<br>С Уважением. Петленко С.В.</p>
+                            </div>
+                          </div>
+                          <div class="question__item">
+                            <div class="question__top">
+                                <span class="question__icon">
+                                  <span class="question__icon--minus"></span>
+                                </span>
+                                <p class='question__title'>Как правильно давать Тимоген Спрей ребенку в 1,7 лет, в какое время дня лучше? Параллельно принимаем диакарб и аспаркам.</p>
+                            </div>
+                            <div class="question__bottom">
+                              <p class="question__bottom--title">Ответ:</p>
+                              <p class="question__bottom--text">Уважаемая Галина,<br>Тимоген Спрей может назначаться в любое время дня, удобное для соблюдения режима ребенка (желательно, чтобы препарат принимался ежедневно в одно и тоже время на протяжении всего курса). Так как Тимоген используется в виде спрея, то для лучшего эффекта применять его лучше после туалета носа.Согласно инструкции детям в возрасте от 1 года до 6 лет — по 1 дозе (25 мкг) в одну ноздрю 1 раз (1 впрыск). Препарат назначают в течение 10 дней с лечебной целью и в течение 3-5 дней — с профилактической целью.<br>Начарова Е.П., к.м.н.</p>
+                            </div>
+                          </div>
+                          <div class="question__item">
+                              <div class="question__top">
+                                  <span class="question__icon">
+                                    <span class="question__icon--minus"></span>
+                                  </span>
+                                  <p class='question__title'>Тимоген Спрей оказывает воздействие на общий или только местный иммунитет? Оказывает ли он какое-то влияние на воспаленные аденоиды?</p>
+                              </div>
+                              <div class="question__bottom">
+                                <p class="question__bottom--title">Ответ:</p>
+                                <p class="question__bottom--text">Уважаемая Ирина,<br>Препарат Тимоген в лекарственной форме «назальный спрей» безусловно оказывает влияние на состояние общей иммунологической реактивности организма. Небольшой размер молекулы действующего вещества препарата (глутамил-триптофан) позволяет ей преодолевать биологические барьеры без нарушения ее структуры, а следовательно, и функциональной активности. Благодаря обширной васкуляризации, т.е. наличию разветвленной сосудистой сети, слизистой оболочки носа, препарат практически мгновенно всасывается и попадает в кровоток, оказывая свое системное (общее) воздействие на различные звенья иммунной системы. Таким образом назальное применение препарата,в данном случае, практически аналогично его внутривенному введению. В связи с тем, что препарат Тимоген проявляет наибольшее сродство именно к лимфоидной ткани, его действие распространяется в основном на центральные (тимус, костный мозг) и периферические органы иммунной системы (лимфатические узлы, диффузная лимфоидная ткань и т.д.). В связи с тем, что аденоиды (носовые миндалины) так же представляют собой скопление лимфоидной ткани, то, вероятно, Тимоген способен оказывать на них определенное влияние, но наиболее вероятным в данном случае следует считать опосредованный механизм воздействия – через систему регуляции иммунной системы. Специальных исследований по данному вопросу не проводилось. Тем не менее имеются данные о том, что применение Тимоген способствует снижению частоты рецидивирования аденоидитов итонзиллитов у детей. <br>С Уважением, доктор медицинских наук Петленко С.В.</p>
+                              </div>
+                          </div>
+                          <div class="question__item">
+                              <div class="question__top">
+                                  <span class="question__icon">
+                                    <span class="question__icon--minus"></span>
+                                  </span>
+                                  <p class='question__title'>Можно ли ребенку 3.5 года давать Тимоген Спрей?</p>
+                              </div>
+                              <div class="question__bottom">
+                                <p class="question__bottom--title">Ответ:</p>
+                                <p class="question__bottom--text">Уважаемая Елена,<br>Тимоген спрей рекомендован детям с 1 года. Но так ли необходим Тимоген Спрей вашему ребенку — лучше проконсультироваться с ашим педиатром.</p>
+                              </div>
+                          </div>
+                          <div class="question__item">
+                            <div class="question__top">
+                              <span class="question__icon">
+                                <span class="question__icon--minus"></span>
+                              </span>
+                              <p class='question__title'>Как Тимоген спрей проникает и оказывает действие через слизистую дыхательных путей?</p>
+                            </div>
+                            <div class="question__bottom">
+                              <p class="question__bottom--title">Ответ:</p>
+                              <p class="question__bottom--text">Добрый день,<br>На Ваш вопрос отвечает Сергей Викторович Петленко,<br>Врач-иммунолог, доктор медицинских наук, ведущий научный сотрудник Военно-медицинской академии имени С.М. Кирова, руководитель отдела клинических исследований МБНПК «Цитомед» (Санкт-Петербург).<br>Тимоген проникает через биологические мембраны хорошо, так как молекула очень небольшая.<br>Вопрос в другом — зачем Тимоген должен проникать через слизистую?<br>Тимоген прекрасно выполняет свои функции на поверхности слизистых, где, как известно присутствует большое количество иммунокомпетентных клеток в составе диффузной лимфоидной ткани, являющейся барьером для инфекционных агентов.<br>А вот системное действие препарата (в форме спрея) действительно реализуется путем проникновения в мелкие капилляры слизистой оболочки носа, васкуляризация (сосудистая сеть) которой выражена достаточно хорошо.</p>
+                            </div>
+                          </div>
+                          <div class="question__item">
+                            <div class="question__top">
+                              <span class="question__icon">
+                                <span class="question__icon--minus"></span>
+                              </span>
+                              <p class='question__title'>Почему нельзя применять Тимоген Спрей при беременности? как он влияет на плод? Каковы могут быть последствия, если пользоваться им 3 дня на ранних сроках (до 4-х недель)?</p>
+                            </div>
+                            <div class="question__bottom">
+                              <p class="question__bottom--title">Ответ:</p>
+                              <p class="question__bottom--text">Уважаемая Александра, <br>в инструкции по применению препарата состояние беременности указано как противопоказание потому, что клинических исследований на беременных женщинах из этических соображений не проводилось. Сам Тимоген успешно применяется в акушерстве и гинекологии более чем 15 лет. Применяется и на ранних стадиях беременности, и при гестозах, и при тяжелых состояниях новорожденного. Мы считаем, что у Вас нет причин волноваться, будьте здоровы!</p>
+                            </div>
+                          </div>
+                          <div class="question__item">
+                              <div class="question__top">
+                                  <span class="question__icon">
+                                    <span class="question__icon--minus"></span>
+                                  </span>
+                                  <p class='question__title'>Можно ли использовать имуномоделирующие препараты перед прививкой АКДС в качестве подготовки организма и для устранения осложнений?</p>
+                              </div>
+                              <div class="question__bottom">
+                                <p class="question__bottom--title">Ответ:</p>
+                                <p class="question__bottom--text">Так называемую допрививочную коррекцию тимогеном проводить можно и можно использовать Тимоген Спрей, однако режим такой профилактики все же должен определить врач-иммунолог.</p>
+                              </div>
+                          </div>
+                          <div class="question__item">
+                            <div class="question__top">
+                              <span class="question__icon">
+                                <span class="question__icon--minus"></span>
+                              </span>
+                              <p class='question__title'>Врач прописала сыну (4 года) Тимоген Спрей в нос по 1 дозе 1 раз в день в течение 3 недель, в инструкции по применению препарата нет такого срока использования препарата. Возможно ли использовать препарат в течение такого срока?</p>
+                            </div>
+                            <div class="question__bottom">
+                              <p class="question__bottom--title">Ответ:</p>
+                              <p class="question__bottom--text">Здравствуйте, <br>вы можете без опаски следовать рекомендациям вашего доктора. Тимоген абсолютно нетоксичный препарата и превышение дозы даже в 10 000 раз — не вызывает токсических реакций. В инструкции указан средний курс лечения. Возможно, лечение вашего ребенка требует немного другого курса приема.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div id='page_navigation'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sick__button text__button">
+              <a class="sick__button--link" href="buy.html">Купить <b>Тимоген<sup>&reg;</sup>&nbsp;Спрей</b> в интернет-аптеках</a>
+            </div>
+        </main>
+        <div class="question__outter">
+          <div class="question__form">
+            <p class="question__form--title">Напишите свой вопрос нашему специалисту</p>
+            <form action="" class="form">
+              <div class="form__field">
+                <input class='input' type="text" required="">
+                <span class="form-bar"></span>
+                <label for="password" class="float-label">Имя</label>
+              </div>
+              <div class="form__field">
+                <input class='input' type="text" required="">
+                <span class="form-bar"></span>
+                <label for="password" class="float-label">Email</label>
+              </div>
+              <div class="form__field form__field--textarea">
+                <textarea class='input' type="text" rows='1' required=""></textarea>
+                <span class="form-bar"></span>
+                <label for="password" class="float-label">Ваш вопрос</label>
+              </div>
+              <div class="form__bottom">
+                <div class="checkbox checkbox-default">       
+                  <input id="remember" type="checkbox" value="yes" alt="Remember me" class="">
+                  <label for="remember">
+                    <span class="chk-span" tabindex="2"></span>Я согласен с <a href="">правилами сайта</a>
+                  </label>      
+                </div>
+                <div class="form__button">
+                  <button type='submit' class="contact_btn">
+                    <span class="contact_btn--inner">Отправить</span>
+                  </button>
+                </div>
+                </p>
+              </div>
+            </form>
+          </div>
+          <div class="response">
+            <p class="response__title">Спасибо за Ваш вопрос!</p>
+            <p class="response__text">Мы обязательно ответим на него в ближайшее время</p>
+            <span class="response__close"></span>
+          </div>
+        </div>
+        <footer class="footer school__footer">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <p class="warning__fixed">Имеются противопоказания, необходима консультация специалиста</p>
+                  <p class="footer__warning">Имеются противопоказания, необходима консультация специалиста</p>
+                </div>
+              </div>
+            </div>
+            <div class="footer__main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-9 footer__copyright">
+                            <div class="footer__text-1">
+                                <p class="footer__text-1-1"><span class="year"></span> © ЗАО МБНПК «Цитомед»</p>
+                                <p class="footer__text-1-2">Все права защищены</p>
+                            </div>
+                            <a href='confidential.html' class="footer__text-2">Политика конфиденциальности</a>
+                            <a href='agreement.html' class="footer__text-2">Правовое соглашение</a>
+                        </div>
+                        <div class="col-12 col-lg-3 footer__logo-col">
+                            <p class="footer__text-3">Сделано в <a href='https://www.mosreklama.net/' class="medor__logo"><img src="img/logo_medor.png" alt=""></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src='js/main.js'></script>
+</body>
+
+</html>
